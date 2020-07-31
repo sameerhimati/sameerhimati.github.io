@@ -4,5 +4,5 @@ Welcome! I am a recent graduate from the University of Toronto, I graduated with
 
 ### Projects
 
-#### [Analysing SEC Filings Using NLP] (https://github.com/sameerhimati/Analysing_SEC_Filings)
+#### [Analysing SEC Filings Using NLP](https://github.com/sameerhimati/Analysing_SEC_Filings)
 I used Natural Language Processing to analyse Merger and Acquisition filings from the SEC.
