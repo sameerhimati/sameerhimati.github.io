@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-ink antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/20 text-ink;
+  }
+}
+
+/* Prose styles for blog posts */
+.prose {
+  @apply text-ink-light leading-relaxed;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  @apply text-ink font-semibold;
+}
+
+.prose h1 {
+  @apply text-3xl mt-8 mb-4;
+}
+
+.prose h2 {
+  @apply text-2xl mt-8 mb-3;
+}
+
+.prose h3 {
+  @apply text-xl mt-6 mb-2;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose a {
+  @apply text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors;
+}
+
+.prose ul,
+.prose ol {
+  @apply mb-4 pl-6;
+}
+
+.prose ul {
+  @apply list-disc;
+}
+
+.prose ol {
+  @apply list-decimal;
+}
+
+.prose li {
+  @apply mb-1;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-accent/30 pl-4 italic my-4 text-ink-light;
+}
+
+.prose code {
+  @apply bg-cream-dark px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.prose pre {
+  @apply bg-ink text-cream p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-cream;
+}
+
+.prose strong {
+  @apply text-ink font-semibold;
+}
+
+.prose img {
+  @apply rounded-lg my-4;
+}
+
+.prose hr {
+  @apply border-cream-dark my-8;
+}
