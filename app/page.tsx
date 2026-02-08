@@ -88,7 +88,7 @@ export default function Home() {
               title="Learnt"
               description="Minimal iOS app for tracking daily learnings. Voice and text input. Built with SwiftUI, currently in TestFlight."
               tags={["SwiftUI", "iOS", "Speech-to-Text"]}
-              href="https://github.com/sameerhimati"
+              href="https://sameerhimati.com/Learnt/"
               external
             />
             <ProjectCard
