@@ -71,6 +71,47 @@ export default function Home() {
           </div>
         </section>
 
+        {/* GitHub Projects */}
+        <section className="mb-20">
+          <h2 className="text-sm font-semibold text-ink-light/60 uppercase tracking-wider mb-6">
+            GitHub
+          </h2>
+          <div className="space-y-2">
+            {[
+              { emoji: "📱", name: "Learnt", desc: "iOS app for tracking daily learnings", date: "Feb 2026" },
+              { emoji: "🛠️", name: "claude-code-kit", desc: "Dev skills and agents for Claude Code", date: "Feb 2026" },
+              { emoji: "📣", name: "claude-marketing-kit", desc: "Marketing skills for Claude Code", date: "Feb 2026" },
+              { emoji: "✍️", name: "blogpost", desc: "CLI tool for creating blog post markdown files", date: "Feb 2026" },
+              { emoji: "📚", name: "PaperBuddy", desc: "Read papers better and retain more knowledge", date: "Apr 2025" },
+              { emoji: "📈", name: "economic-dashboard", desc: "Economic data dashboard", date: "Oct 2025" },
+              { emoji: "🌳", name: "PapersApplied-ID3", desc: "Implementation of J.R. Quinlan's ID3 paper", date: "Feb 2025" },
+              { emoji: "🔗", name: "PapersApplied-Apriori", desc: "Implementation of Agrawal's Association Rule paper", date: "Feb 2025" },
+              { emoji: "📊", name: "Analysing_SEC_Filings", desc: "NLP on M&A filings from the SEC", date: "Jul 2020" },
+              { emoji: "🔇", name: "muteAd", desc: "Chrome extension that mutes ads on streaming platforms", date: "Oct 2024" },
+              { emoji: "⚡", name: "Pokeman-Langchains", desc: "LangChain exploration", date: "Mar 2024" },
+            ].map((project) => (
+              <a
+                key={project.name}
+                href={`https://github.com/sameerhimati/${project.name}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-baseline gap-3 group py-1"
+              >
+                <span className="text-base">{project.emoji}</span>
+                <span className="text-ink group-hover:text-accent transition-colors font-medium">
+                  {project.name}
+                </span>
+                <span className="text-sm text-ink-light/60 hidden sm:inline">
+                  {project.desc}
+                </span>
+                <span className="ml-auto text-xs font-mono text-ink-light/40">
+                  {project.date}
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+
         {/* Featured Projects */}
         <section id="projects" className="mb-20">
           <h2 className="text-sm font-semibold text-ink-light/60 uppercase tracking-wider mb-6">
