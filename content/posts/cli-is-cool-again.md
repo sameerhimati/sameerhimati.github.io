@@ -1,6 +1,6 @@
 ---
 title: "Cli Is Cool Again"
-date: 2026-02-20
+date: "2026-02-20"
 description: "How we are moving away from GUIs with the rise of Coding Agents"
 tags: []
 ---
