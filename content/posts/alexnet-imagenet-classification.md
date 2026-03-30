@@ -2,7 +2,7 @@
 title: "[PapersSummarized] ImageNet Classification with Deep Convolutional Neural Networks (2012)"
 date: "2025-03-11"
 description: "A. Krizhevsky et al. — The paper that lit the deep learning revolution. A must read. Rating: 5/5."
-tags: ["Papers", "Computer Vision"]
+tags: ["Papers"]
 ---
 
 *Rating: 5/5*

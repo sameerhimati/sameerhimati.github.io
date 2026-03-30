@@ -2,7 +2,7 @@
 title: "[Reflections] 001 - The Thinking Game"
 date: "2025-12-15"
 description: "Watching The Thinking Game about DeepMind and processing where humans fit in the age of AI."
-tags: ["Reflections", "AI"]
+tags: ["Reflections"]
 ---
 
 I just watched a documentary called The Thinking Game about DeepMind and how they solved the protein folding problem. Demis Hassabis. Chess prodigy at four. Neuroscience PhD to understand the brain. Then built the thing.

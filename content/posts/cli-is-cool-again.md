@@ -2,7 +2,7 @@
 title: "Cli Is Cool Again"
 date: "2026-02-20"
 description: "How we are moving away from GUIs with the rise of Coding Agents"
-tags: []
+tags: ["Reflections"]
 ---
 
 I've been using Claude Code since its launch a year ago but really been working with skills and agents for around a month now. It's been a game changer in the amount of work I've been able to ship. 

@@ -2,7 +2,7 @@
 title: "[PapersSummarized] Deep Residual Learning for Image Recognition (2015)"
 date: "2025-04-03"
 description: "K. He et al. — How residual connections solved the degradation problem in deep networks. Rating: 3/5."
-tags: ["Papers", "Computer Vision"]
+tags: ["Papers"]
 ---
 
 *Rating: 3/5*

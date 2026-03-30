@@ -2,7 +2,7 @@
 title: "[Learnings] 000 - AI Applied (Foundations)"
 date: "2025-12-13"
 description: "A practical guide to working with AI models — API basics, tokens, embeddings, and system prompts."
-tags: ["AI", "Learnings"]
+tags: ["Learnings"]
 ---
 
 If you follow any course or tutorial on AI almost always people are Theory first, You'll see things like:

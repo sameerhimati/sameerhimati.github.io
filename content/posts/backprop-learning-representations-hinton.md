@@ -2,7 +2,7 @@
 title: "[PapersSummarized] Learning Representations by Back-Propagating Errors (1986)"
 date: "2025-03-04"
 description: "G. Hinton et al. — The seminal paper that laid the foundation for all deep learning. Rating: 2/5."
-tags: ["Papers", "Deep Learning"]
+tags: ["Papers"]
 ---
 
 *Rating: 2/5*

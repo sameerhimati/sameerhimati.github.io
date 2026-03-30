@@ -2,7 +2,7 @@
 title: "[Learnings] 001 - AI Applied (Prompt Engineering and Evaluation)"
 date: "2025-12-17"
 description: "The two main ways AI Engineers boost their outputs — Prompt Engineering and Evaluation."
-tags: ["AI", "Learnings"]
+tags: ["Learnings"]
 ---
 
 This is typically the part of using AI models that differentiates the power users from regular users.

@@ -2,7 +2,7 @@
 title: "[PapersApplied] Induction of Decision Trees (1986)"
 date: "2025-02-14"
 description: "J. R. Quinlan — The precursor to C4.5 and C5 algorithms for creating decision trees."
-tags: ["Papers", "Machine Learning"]
+tags: ["Papers"]
 ---
 
 **One line Summary:** Pretty good for understanding the early work and intuition behind decision trees and is the precursor to the C4.5 and C5 algorithms for creating decision trees. Lays the groundwork for how we think about picking the correct discriminators at each level of the tree with an easy to understand and follow example.

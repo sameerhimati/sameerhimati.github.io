@@ -1,4 +1,4 @@
-import BlogPostCard from "@/components/BlogPostCard";
+import BlogList from "@/components/BlogList";
 import { getAllPosts } from "@/lib/posts";
 
 export const metadata = {
@@ -16,17 +16,7 @@ export default function BlogIndex() {
         <p className="text-ink-light mb-10">
           Learnings, reflections, paper summaries, and notes.
         </p>
-        <div>
-          {posts.map((post) => (
-            <BlogPostCard
-              key={post.slug}
-              title={post.title}
-              date={post.date}
-              description={post.description}
-              slug={post.slug}
-            />
-          ))}
-        </div>
+        <BlogList posts={posts} />
       </div>
     </main>
   );

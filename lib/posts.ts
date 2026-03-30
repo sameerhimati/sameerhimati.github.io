@@ -36,10 +36,14 @@ export function getPostMeta(slug: string): PostMeta {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data } = matter(fileContents);
 
+  const date = data.date instanceof Date
+    ? data.date.toISOString().split("T")[0]
+    : data.date;
+
   return {
     slug,
     title: data.title,
-    date: data.date,
+    date,
     description: data.description || undefined,
     tags: data.tags || undefined,
   };
@@ -53,10 +57,14 @@ export async function getPostBySlug(slug: string): Promise<Post> {
   const processedContent = await remark().use(html).process(content);
   const contentHtml = processedContent.toString();
 
+  const date = data.date instanceof Date
+    ? data.date.toISOString().split("T")[0]
+    : data.date;
+
   return {
     slug,
     title: data.title,
-    date: data.date,
+    date,
     description: data.description || undefined,
     tags: data.tags || undefined,
     contentHtml,

@@ -2,7 +2,7 @@
 title: "[PapersSummarized] Backpropagation Applied to Handwritten Zip Code Recognition (1989)"
 date: "2025-03-10"
 description: "Y. LeCun et al. — The first successful large-scale commercial application of backpropagation. Rating: 3/5."
-tags: ["Papers", "Deep Learning"]
+tags: ["Papers"]
 ---
 
 *Rating: 3/5*

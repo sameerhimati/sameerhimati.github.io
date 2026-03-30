@@ -2,7 +2,7 @@
 title: "[NotesToSelf] Intuition Behind Why ReLU Works So Well"
 date: "2025-03-10"
 description: "Breaking down why ReLU is the go-to activation function in neural networks."
-tags: ["Notes", "Deep Learning"]
+tags: ["Reflections"]
 ---
 
 **Non-linearity:** The key purpose of activation functions is to introduce non-linearity into neural networks. Without non-linearity, a neural network would just be a series of linear transformations, which is equivalent to a single linear transformation - severely limiting what the network can learn.

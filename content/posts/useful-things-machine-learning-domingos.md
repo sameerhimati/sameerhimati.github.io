@@ -2,7 +2,7 @@
 title: "[PapersSummarized] A Few Useful Things to Know about Machine Learning (2012)"
 date: "2025-02-25"
 description: "P. Domingos — 12 practical insights every ML practitioner should know."
-tags: ["Papers", "Machine Learning"]
+tags: ["Papers"]
 ---
 
 This paper/report is slightly different from previous posts as it's more of a report than a paper and is a good review of important things to keep in mind in traditional machine learning.

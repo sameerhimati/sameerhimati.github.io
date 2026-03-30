@@ -2,7 +2,7 @@
 title: "[PapersApplied] Mining Association Rules between Sets of Items in Large Databases (1993)"
 date: "2025-02-21"
 description: "R. Agrawal et al. — The Apriori Algorithm for finding item relationships in transaction data."
-tags: ["Papers", "Machine Learning"]
+tags: ["Papers"]
 ---
 
 **One line Summary:** This seminal paper that laid the foundation for the association rule learning algorithm - Apriori Algorithm is a must read to learn how ML was applied in the early days in business applications, particularly in the e-commerce space, to learning how certain items can boost the likelihood of other items being bought.

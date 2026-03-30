@@ -2,7 +2,7 @@
 title: "[PapersSummarized] Very Deep Convolutional Networks For Large-Scale Image Recognition (2015)"
 date: "2025-03-24"
 description: "K. Simonyan et al. — VGG paper showing deeper is better with smaller filters. Rating: 1/5."
-tags: ["Papers", "Computer Vision"]
+tags: ["Papers"]
 ---
 
 *Rating: 1/5*

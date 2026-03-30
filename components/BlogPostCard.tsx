@@ -5,6 +5,7 @@ interface BlogPostCardProps {
   date: string;
   description?: string;
   slug: string;
+  tags?: string[];
 }
 
 export default function BlogPostCard({
@@ -12,6 +13,7 @@ export default function BlogPostCard({
   date,
   description,
   slug,
+  tags,
 }: BlogPostCardProps) {
   return (
     <Link
@@ -22,9 +24,16 @@ export default function BlogPostCard({
         <h3 className="text-ink group-hover:text-accent transition-colors font-medium">
           {title}
         </h3>
-        <time className="text-sm text-ink-light/60 font-mono flex-shrink-0">
-          {date}
-        </time>
+        <div className="flex items-baseline gap-2 flex-shrink-0">
+          {tags && tags.length > 0 && (
+            <span className="text-xs px-2 py-0.5 rounded-full bg-cream-dark/60 text-ink-light">
+              {tags[0]}
+            </span>
+          )}
+          <time className="text-sm text-ink-light/60 font-mono">
+            {date}
+          </time>
+        </div>
       </div>
       {description && (
         <p className="text-sm text-ink-light mt-1 line-clamp-1">{description}</p>
