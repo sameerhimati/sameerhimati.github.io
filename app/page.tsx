@@ -15,8 +15,9 @@ export default function Home() {
             Sameer Himati
           </h1>
           <p className="text-lg text-ink-light max-w-2xl leading-relaxed mb-8">
-            Software engineer building tools, apps, and systems. Currently
-            working on{" "}
+            I love reading, starting companies, and investing. Currently
+            building <span className="text-ink">Atlas</span>, an AI-native
+            investment firm for private markets. Also founded{" "}
             <a
               href="https://itamih.com"
               target="_blank"
@@ -25,17 +26,16 @@ export default function Home() {
             >
               Itamih
             </a>{" "}
-            (AI consulting),{" "}
-            <span className="text-ink">Learnt</span> (iOS), and open-source{" "}
+            (AI integration for small businesses) and{" "}
             <a
-              href="https://github.com/sameerhimati/claude-code-kit"
+              href="https://thefend.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent hover:underline"
             >
-              Claude Code toolkits
-            </a>
-            .
+              Fend
+            </a>{" "}
+            (a members-only startup network). More coming soon.
           </p>
           <div className="flex gap-5 text-sm">
             <a
@@ -82,13 +82,11 @@ export default function Home() {
               { emoji: "🛠️", name: "claude-code-kit", desc: "Dev skills and agents for Claude Code", date: "Feb 2026" },
               { emoji: "📣", name: "claude-marketing-kit", desc: "Marketing skills for Claude Code", date: "Feb 2026" },
               { emoji: "✍️", name: "blogpost", desc: "CLI tool for creating blog post markdown files", date: "Feb 2026" },
-              { emoji: "📚", name: "PaperBuddy", desc: "Read papers better and retain more knowledge", date: "Apr 2025" },
               { emoji: "📈", name: "economic-dashboard", desc: "Economic data dashboard", date: "Oct 2025" },
+              { emoji: "📚", name: "PaperBuddy", desc: "Read papers better and retain more knowledge", date: "Apr 2025" },
               { emoji: "🌳", name: "PapersApplied-ID3", desc: "Implementation of J.R. Quinlan's ID3 paper", date: "Feb 2025" },
               { emoji: "🔗", name: "PapersApplied-Apriori", desc: "Implementation of Agrawal's Association Rule paper", date: "Feb 2025" },
               { emoji: "📊", name: "Analysing_SEC_Filings", desc: "NLP on M&A filings from the SEC", date: "Jul 2020" },
-              { emoji: "🔇", name: "muteAd", desc: "Chrome extension that mutes ads on streaming platforms", date: "Oct 2024" },
-              { emoji: "⚡", name: "Pokeman-Langchains", desc: "LangChain exploration", date: "Mar 2024" },
             ].map((project) => (
               <a
                 key={project.name}
@@ -221,9 +219,9 @@ export default function Home() {
               Toronto. Based between Houston, Chicago, and San Francisco.
             </p>
             <p>
-              I like building things that work — tools, apps, systems. Most of my
-              time right now goes into Itamih (AI consulting for businesses),
-              Learnt (an iOS app), and open-source toolkits for Claude Code.
+              I like building things that work — companies, tools, systems.
+              Atlas is the main focus now. Itamih and Fend are earlier
+              ventures I founded that continue to run.
             </p>
           </div>
         </section>
