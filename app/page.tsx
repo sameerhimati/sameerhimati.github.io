@@ -15,9 +15,7 @@ export default function Home() {
             Sameer Himati
           </h1>
           <p className="text-lg text-ink-light max-w-2xl leading-relaxed mb-8">
-            I love reading, starting companies, and investing. Currently
-            building <span className="text-ink">Atlas</span>, an AI-native
-            investment firm for private markets. Also founded{" "}
+            I love reading, starting companies, and investing. I run{" "}
             <a
               href="https://itamih.com"
               target="_blank"
@@ -25,8 +23,12 @@ export default function Home() {
               className="text-accent hover:underline"
             >
               Itamih
-            </a>{" "}
-            (AI integration for small businesses) and{" "}
+            </a>
+            , forward-deployed AI for small businesses since 2023 — recent
+            work includes a from-scratch practice-management system for a
+            dental hospital. Previously built{" "}
+            <span className="text-ink">Atlas</span> (AI-native investment
+            firm for private markets) and{" "}
             <a
               href="https://thefend.com"
               target="_blank"
@@ -35,7 +37,11 @@ export default function Home() {
             >
               Fend
             </a>{" "}
-            (a members-only startup network). More coming soon.
+            (members-only startup network). Now I&apos;m trying to{" "}
+            <Link href="/blog" className="text-accent hover:underline">
+              Write
+            </Link>{" "}
+            more.
           </p>
           <div className="flex gap-5 text-sm">
             <a
@@ -63,7 +69,7 @@ export default function Home() {
               X
             </a>
             <a
-              href="mailto:sameerhimati98@gmail.com"
+              href="mailto:samhimre@gmail.com"
               className="text-ink-light hover:text-ink transition-colors"
             >
               Email
@@ -71,42 +77,49 @@ export default function Home() {
           </div>
         </section>
 
-        {/* GitHub Projects */}
+        {/* Work — public repos + private engagements linked to writeups */}
         <section className="mb-20">
           <h2 className="text-sm font-semibold text-ink-light/60 uppercase tracking-wider mb-6">
-            GitHub
+            Work
           </h2>
           <div className="space-y-2">
             {[
-              { emoji: "📱", name: "Learnt", desc: "iOS app for tracking daily learnings", date: "Feb 2026" },
-              { emoji: "🛠️", name: "claude-code-kit", desc: "Dev skills and agents for Claude Code", date: "Feb 2026" },
-              { emoji: "📣", name: "claude-marketing-kit", desc: "Marketing skills for Claude Code", date: "Feb 2026" },
-              { emoji: "✍️", name: "blogpost", desc: "CLI tool for creating blog post markdown files", date: "Feb 2026" },
-              { emoji: "📈", name: "economic-dashboard", desc: "Economic data dashboard", date: "Oct 2025" },
-              { emoji: "📚", name: "PaperBuddy", desc: "Read papers better and retain more knowledge", date: "Apr 2025" },
-              { emoji: "🌳", name: "PapersApplied-ID3", desc: "Implementation of J.R. Quinlan's ID3 paper", date: "Feb 2025" },
-              { emoji: "🔗", name: "PapersApplied-Apriori", desc: "Implementation of Agrawal's Association Rule paper", date: "Feb 2025" },
-              { emoji: "📊", name: "Analysing_SEC_Filings", desc: "NLP on M&A filings from the SEC", date: "Jul 2020" },
-            ].map((project) => (
-              <a
-                key={project.name}
-                href={`https://github.com/sameerhimati/${project.name}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-baseline gap-3 group py-1"
-              >
-                <span className="text-base">{project.emoji}</span>
-                <span className="text-ink group-hover:text-accent transition-colors font-medium">
-                  {project.name}
-                </span>
-                <span className="text-sm text-ink-light/60 hidden sm:inline">
-                  {project.desc}
-                </span>
-                <span className="ml-auto text-xs font-mono text-ink-light/40">
-                  {project.date}
-                </span>
-              </a>
-            ))}
+              { emoji: "🏢", name: "Atlas", desc: "Private markets agent platform for CRE", href: "https://itamih.com/case-studies/atlas", external: true, date: "2026" },
+              { emoji: "🏥", name: "Clinic", desc: "Full rewrite of a 26-year-old dental practice OS", href: "/blog/build-something-useful", external: false, date: "2026" },
+              { emoji: "💰", name: "Holding / David.ai", desc: "Family office dashboard + Claude wealth advisor", href: "https://itamih.com/case-studies/holding", external: true, date: "2026" },
+              { emoji: "📱", name: "Learnt", desc: "iOS app for tracking daily learnings", href: "https://github.com/sameerhimati/Learnt", external: true, date: "Feb 2026" },
+              { emoji: "🛠️", name: "claude-code-kit", desc: "Dev skills and agents for Claude Code", href: "https://github.com/sameerhimati/claude-code-kit", external: true, date: "Feb 2026" },
+              { emoji: "📣", name: "claude-marketing-kit", desc: "Marketing skills for Claude Code", href: "https://github.com/sameerhimati/claude-marketing-kit", external: true, date: "Feb 2026" },
+              { emoji: "✍️", name: "blogpost", desc: "CLI tool for creating blog post markdown files", href: "https://github.com/sameerhimati/blogpost", external: true, date: "Feb 2026" },
+              { emoji: "📈", name: "economic-dashboard", desc: "Economic data dashboard", href: "https://github.com/sameerhimati/economic-dashboard", external: true, date: "Oct 2025" },
+              { emoji: "📚", name: "PaperBuddy", desc: "Read papers better and retain more knowledge", href: "https://github.com/sameerhimati/PaperBuddy", external: true, date: "Apr 2025" },
+              { emoji: "🌳", name: "PapersApplied-ID3", desc: "Implementation of J.R. Quinlan's ID3 paper", href: "https://github.com/sameerhimati/PapersApplied-ID3", external: true, date: "Feb 2025" },
+              { emoji: "🔗", name: "PapersApplied-Apriori", desc: "Implementation of Agrawal's Association Rule paper", href: "https://github.com/sameerhimati/PapersApplied-Apriori", external: true, date: "Feb 2025" },
+              { emoji: "📊", name: "Analysing_SEC_Filings", desc: "NLP on M&A filings from the SEC", href: "https://github.com/sameerhimati/Analysing_SEC_Filings", external: true, date: "Jul 2020" },
+            ].map((project) => {
+              const linkProps = project.external
+                ? { href: project.href, target: "_blank", rel: "noopener noreferrer" }
+                : { href: project.href };
+              const Component = project.external ? "a" : Link;
+              return (
+                <Component
+                  key={project.name}
+                  {...linkProps}
+                  className="flex items-baseline gap-3 group py-1"
+                >
+                  <span className="text-base">{project.emoji}</span>
+                  <span className="text-ink group-hover:text-accent transition-colors font-medium">
+                    {project.name}
+                  </span>
+                  <span className="text-sm text-ink-light/60 hidden sm:inline">
+                    {project.desc}
+                  </span>
+                  <span className="ml-auto text-xs font-mono text-ink-light/40">
+                    {project.date}
+                  </span>
+                </Component>
+              );
+            })}
           </div>
         </section>
 
@@ -118,10 +131,16 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <ProjectCard
               title="Itamih"
-              description="AI business automation consulting. Building custom tools that save teams hours every week. Case studies: Hannah, Economic Dashboard, FundLens."
+              description="Forward-deployed AI for small businesses, since 2023. Custom tools that save teams hours every week. Case studies: Hannah, Economic Dashboard, FundLens."
               tags={["Next.js", "FastAPI", "Claude AI", "Railway"]}
               href="https://itamih.com"
               external
+            />
+            <ProjectCard
+              title="Clinic"
+              description="From-scratch practice-management system for a dental clinic. Replaced three SaaS subscriptions; in daily use by the doctors and staff. Built in the open with the team."
+              tags={["Next.js", "Prisma", "Bun", "Production"]}
+              href="/blog/build-something-useful"
             />
             <ProjectCard
               title="Learnt"
@@ -208,23 +227,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About */}
-        <section id="about" className="mb-8">
-          <h2 className="text-sm font-semibold text-ink-light/60 uppercase tracking-wider mb-6">
-            About
-          </h2>
-          <div className="text-ink-light leading-relaxed max-w-2xl space-y-4">
-            <p>
-              Studied Applied Statistics and Computer Science at the University of
-              Toronto. Based between Houston, Chicago, and San Francisco.
-            </p>
-            <p>
-              I like building things that work — companies, tools, systems.
-              Atlas is the main focus now. Itamih and Fend are earlier
-              ventures I founded that continue to run.
-            </p>
-          </div>
-        </section>
       </div>
     </main>
   );
