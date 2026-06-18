@@ -29,3 +29,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# writing archive — local drafts, never published or committed
+/content/posts/archive/
