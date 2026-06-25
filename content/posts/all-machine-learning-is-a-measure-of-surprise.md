@@ -17,13 +17,13 @@ His example was verifying two complementary claims:
 
 The model of growth of both knowledge and scientists hence are both claimed to be exponential, with the growth of knowledge being proportional to the number of scientists alive. 
 
-Specifically, the first claim assumes the number of scientists at any time, $t$:
+Specifically, the first claim assumes the number of scientists at any time, t:
 
 $$
 y(t) = a e^{bt}
 $$
 
-and the amount of knowledge produced annually has a constant $k$ of proportionality to the number of scientists alive. Which leads to **claim 1**:
+and the amount of knowledge produced annually has a constant k of proportionality to the number of scientists alive. Which leads to **claim 1**:
 
 $$
 \frac{1}{2} = \frac{\int_{-\infty}^{T-17} k a e^{bt} dt}{\int_{-\infty}^{T} k a e^{bt} dt} = \frac{(ka/b) e^{b(T - 17)}}{(ka/b) e^{bT}} = e^{-17b}
@@ -58,11 +58,11 @@ Growth is seen in exponentials. Division is the reverse of a single multiplicati
 
 Digging in further what log is doing is turning × into +. So a ×2 becomes a +1 level, a ×8 becomes a +3 levels (thinking in base 2 here). Those multiplicative jumps, the new 'levels' of progression don't sit on a ruler our brains naturally interpret. That is the translation, log bridges between the two worlds.
 
-At some point in university, I'd been told that $log$ and $e$ are the two most important pieces of math for interpreting the world. I nodded and never understood why until now. Log used to be the black box function I memorized and added where required, but now it's just the bridge between those two worlds. 
+At some point in university, I'd been told that log and e are the two most important pieces of math for interpreting the world. I nodded and never understood why until now. Log used to be the black box function I memorized and added where required, but now it's just the bridge between those two worlds. 
 
 ---
 
-Now practically speaking, where this x -> + translation is common is in the world of probabilities. Probabilities are what all machine learning is based on and all learning is just a measure of how probable outcomes are. 
+Now practically speaking, where this × → + translation is common is in the world of probabilities. Probabilities are what all machine learning is based on and all learning is just a measure of how probable outcomes are. 
 
 They measure how likely the occurrence of an event is, this can be how likely is it that this picture is a cat, given that I see features that look like whiskers. Or how likely is the next letter 'e' given that the first two letters are 'th'.
 
@@ -74,7 +74,7 @@ But how do you actually measure surprise?
 
 The interesting thing about the logarithmic function is that for inputs above 1 it compresses, turning big multiplicative numbers into small additive 'levels' like I showed above. 
 
-But probabilities live between 0 and 1, and there the log becomes negative. $log$ is 0 at $p=1$, sliding toward $-\infty$ as $p \to 0$. Every probability becomes a negative number, and the rarer the event, the more negative it gets. Flip the sign and that becomes a positive *surprise* score. 
+But probabilities live between 0 and 1, and there the log becomes negative. log is 0 at p = 1, sliding toward −∞ as p → 0. Every probability becomes a negative number, and the rarer the event, the more negative it gets. Flip the sign and that becomes a positive *surprise* score. 
 
 In the world of chance, the log is better understood as a measure of how *surprising* something is: the more certain the event, the closer to 0; the rarer it is, the higher the surprise. Take three cases:
 
@@ -86,12 +86,12 @@ In the world of chance, the log is better understood as a measure of how *surpri
 
 So what should an honest surprise meter do? Four things:
 
-- A certain event ($p = 1$) that happens carries **zero** surprise.
-- An "impossible" event ($p \to 0$) that happens anyway carries **infinite** surprise.
+- A certain event (p = 1) that happens carries **zero** surprise.
+- An "impossible" event (p → 0) that happens anyway carries **infinite** surprise.
 - Rarer always means more surprising.
 - And if two independent unlikely things both happen, the surprises should **add**, struck by lightning *and* winning the lottery on the same day should feel like the sum of both shocks. (Insane if this happens!)
 
-My first guess was $1 - p$, just "how unlikely it was." But it fails in one obvious way, its max is 1. So a one-in-a-billion miracle scores 0.999…, barely more than a coin flip's 0.5, when a miracle should be off the charts, not twice a coin. 
+My first guess was 1 − p, just "how unlikely it was." But it fails in one obvious way, its max is 1. So a one-in-a-billion miracle scores 0.999…, barely more than a coin flip's 0.5, when a miracle should be off the charts, not twice a coin. 
 
 The better idea is starting with the conditions, for two independent events the probabilities **multiply**, but surprise has to **add**. See where I'm going with this...
 
@@ -101,23 +101,23 @@ $$
 \text{surprise}(p) = -\log(p)
 $$
 
-$-log$ is the only function that satisfies all four requirements at once, and it has a name: *information*, measured in bits. 
+−log is the only function that satisfies all four requirements at once, and it has a name: *information*, measured in bits. 
 
 Later I intend to find the origins of this from what Claude Shannon defined as information theory but that's for a later write up.
 
 ---
 
-Now the loss function I'd been using blind all these years seems to make sense. A model outputs a probability for the correct answer, say it's 70% sure the image is a cat, and it *is* a cat. Its surprise is $-\log(0.7)$. Do that for every example and average it, and you have cross-entropy:
+Now the loss function I'd been using blind all these years seems to make sense. A model outputs a probability for the correct answer, say it's 70% sure the image is a cat, and it *is* a cat. Its surprise is −log(0.7). Do that for every example and average it, and you have cross-entropy:
 
 $$
 \text{Cross Entropy} = -\frac{1}{N}\sum_{i=1}^{N} \log\left(p_i\right)
 $$
 
-where $p_i$ is the probability the model gave the *correct* answer on example $i$. That's the whole idea: cross-entropy is just the model's average surprise vs reality, and training is the act of driving that surprise down. (The base of the log only rescales everything, so it doesn't change training, ML conventionally uses the natural log.)
+where pᵢ is the probability the model gave the *correct* answer on example i. That's the whole idea: cross-entropy is just the model's average surprise vs reality, and training is the act of driving that surprise down. (The base of the log only rescales everything, so it doesn't change training, ML conventionally uses the natural log.)
 
-The most important of the 4 requirements is dealing with the confident-but-wrong case. That's why $−log$ is so good. 
+The most important of the 4 requirements is dealing with the confident-but-wrong case. That's why −log is so good. 
 
-Picture a model 99.99% sure the image is a cat when it's actually a dog, it handed the truth a probability of 0.0001. Under −log that's a loss of 4; push it to 99.9999% wrong and the loss climbs to 6, and on without limit. Under $1 - p$ it's stuck at 0.9999 no matter how arrogantly wrong it gets. 
+Picture a model 99.99% sure the image is a cat when it's actually a dog, it handed the truth a probability of 0.0001. Under −log that's a loss of 4; push it to 99.9999% wrong and the loss climbs to 6, and on without limit. Under 1 − p it's stuck at 0.9999 no matter how arrogantly wrong it gets. 
 
 Steep loss means a steep gradient means a hard shove back toward the truth; a flat loss gives the model no reason to move. That's why every classifier on earth trains with −log: it makes confident mistakes the most painful thing a model can do.
 
@@ -125,8 +125,8 @@ Steep loss means a steep gradient means a hard shove back toward the truth; a fl
 
 So that's one function, closed. Or at least cracked open enough that I can 'see' it now instead of just plugging it in where the textbook told me to.
 
-I'm not going to pretend I understand logs fully, I don't. This was a start. But writing it forced me to actually stare at the gaps, and the biggest one is still sitting right there: I kept tripping over $e$ and the natural log, $\ln$, and I still can't tell you what actually makes it 'natural'.
+I'm not going to pretend I understand logs fully, I don't. This was a start. But writing it forced me to actually stare at the gaps, and the biggest one is still sitting right there: I kept tripping over e and the natural log, ln, and I still can't tell you what actually makes it 'natural'.
 
-It's everywhere. The exponential Hamming used for knowledge was $e^{bt}$. Cross-entropy is conventionally written with $\ln$. Earlier I said an exponential's slope equals its own height and admitted I couldn't derive why, and it turns out that's exactly what $e$ is hiding. So why this one number, $e = 2.718...$, why does it keep showing up across all of math and ML?
+It's everywhere. The exponential Hamming used for knowledge was eᵇᵗ. Cross-entropy is conventionally written with ln. Earlier I said an exponential's slope equals its own height and admitted I couldn't derive why, and it turns out that's exactly what e is hiding. So why this one number, e = 2.718..., why does it keep showing up across all of math and ML?
 
 That's what I'm curious about now. Not because it's the next box to tick, but because I clearly don't get it yet, and the whole point of this was to stop memorizing and start seeing.
