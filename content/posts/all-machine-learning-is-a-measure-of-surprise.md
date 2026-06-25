@@ -12,8 +12,9 @@ tags:
 I just started reading a new book, The art of science and engineering by Richard Hamming. As of writing this, I'm only into the first chapter where there was an example of how he looked at facts, claims and exposed their validity using these mental models. As he calls it 'back-of-the-envelope calculations', a method used by great scientists to get a good feeling for the truth or falsity of a claim. 
 
 His example was verifying two complementary claims:
-	**Claim 1:** "Knowledge doubles every 17 years"
-	**Claim 2:** "90% of the scientists who ever lived are now alive"
+
+* **Claim 1:** "Knowledge doubles every 17 years"
+* **Claim 2:** "90% of the scientists who ever lived are now alive"
 
 The model of growth of both knowledge and scientists hence are both claimed to be exponential, with the growth of knowledge being proportional to the number of scientists alive. 
 
@@ -35,9 +36,7 @@ However, he puts this form of thinking not as a gift you are born with but a mus
 
 ---
 
-For context, simultaneously, I've been building up my foundational understanding of the AI/ML space again as it's been accelerating, so pulling this thread felt like a natural break and I could tie them together. 
-
-Exponentials and logarithms are everywhere in the industry: loss curves, probabilities, learning rates. 
+Exponentials and logarithms are everywhere in the AI/ML space: loss curves, probabilities, learning rates. 
 
 I just watched Hamming use them to read the world. So the natural starting point was looking at how things grow. Linear vs exponential growths, a straight line vs exploding ramp. 
 
@@ -56,7 +55,7 @@ We're taught to think in additive terms, a $30,000 raise just adds $30,000 to yo
 
 Growth is seen in exponentials. Division is the reverse of a single multiplication. But growth is repeated multiplication, and the reverse of that isn't division or roots, it's the log.
 
-Digging in further what log is doing is turning × into +. So a ×2 becomes a +1 level, a ×8 becomes a +3 levels (thinking in base 2 here). Those multiplicative jumps, the new 'levels' of progression don't sit on a ruler our brains naturally interpret. That is the translation, log bridges between the two worlds.
+Digging in further what log is doing is turning × into +. So a ×2 becomes a +1 level, a ×8 becomes a +3 level jump (thinking in base 2 here). Those multiplicative jumps, the new 'levels' of progression don't sit on a ruler our brains naturally interpret. That is the translation, log bridges between the two worlds.
 
 At some point in university, I'd been told that log and e are the two most important pieces of math for interpreting the world. I nodded and never understood why until now. Log used to be the black box function I memorized and added where required, but now it's just the bridge between those two worlds. 
 
@@ -127,6 +126,6 @@ So that's one function, closed. Or at least cracked open enough that I can 'see'
 
 I'm not going to pretend I understand logs fully, I don't. This was a start. But writing it forced me to actually stare at the gaps, and the biggest one is still sitting right there: I kept tripping over e and the natural log, ln, and I still can't tell you what actually makes it 'natural'.
 
-It's everywhere. The exponential Hamming used for knowledge was eᵇᵗ. Cross-entropy is conventionally written with ln. Earlier I said an exponential's slope equals its own height and admitted I couldn't derive why, and it turns out that's exactly what e is hiding. So why this one number, e = 2.718..., why does it keep showing up across all of math and ML?
+It's everywhere. The exponential Hamming used for knowledge was eᵇᵗ. Cross-entropy is conventionally written with ln (natural log). Earlier I said an exponential's slope equals its own height and admitted I couldn't derive why, and it turns out that's exactly what e is hiding. So why this one number, e = 2.718..., why does it keep showing up across all of math and ML?
 
 That's what I'm curious about now. Not because it's the next box to tick, but because I clearly don't get it yet, and the whole point of this was to stop memorizing and start seeing.
