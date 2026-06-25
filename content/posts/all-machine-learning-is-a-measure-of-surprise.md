@@ -52,21 +52,13 @@ What undoes an exponential is the logarithm.
 
 ---
 
-We're naturally taught to think in additive terms. If you get a raise of $30,000, that means you can 'add' $30,000 of expenses, savings, spending to your name. An extra chicken nugget is +1. This is natural to us.
+We're taught to think in additive terms, a $30,000 raise just adds $30,000 to your name. But the world often moves multiplicatively, and those jumps feel like changing levels: $30,000 on top of $30,000 is a new life, the same raise on top of $150,000 barely registers. Compounding, growth, a founder watching users climb, it's all multiplicative, and it's genuinely hard to translate between the two worlds.
 
-Multiplicative forces aren't as natural. Rarely do you get a 2x raise or 1.23x the food. But when they happen, they're like jumping levels: a $30,000 raise to someone earning $30,000 is a whole new level, while the same $30,000 to someone on $150,000 is great but doesn't change your life the way doubling your income would.
+Growth is seen in exponentials. Division is the reverse of a single multiplication. But growth is repeated multiplication, and the reverse of that isn't division or roots, it's the log.
 
-Compounding is one of these multiplicative forces, and it's what dictates growth, it's exponential. It's what a founder sees as users climb, it's how network effects work, it's how stock markets ramp up. And it's genuinely hard to translate between the two forces.
-
-So, above, I recollected how growth has to be seen: in exponentials. Division is the reverse of a single multiplication. But growth is repeated multiplication, and the reverse of that isn't division or roots, it's the log.
-
-And here's what the log actually does: it turns × into +. A ×2 becomes a +1 level, a ×8 becomes a +3 levels (thinking in base 2 here). Those multiplicative jumps, the new 'levels' of progression don't sit on a ruler our brains naturally interpret. That is the translation, log bridges between the two worlds.
+Digging in further what log is doing is turning × into +. So a ×2 becomes a +1 level, a ×8 becomes a +3 levels (thinking in base 2 here). Those multiplicative jumps, the new 'levels' of progression don't sit on a ruler our brains naturally interpret. That is the translation, log bridges between the two worlds.
 
 At some point in university, I'd been told that $log$ and $e$ are the two most important pieces of math for interpreting the world. I nodded and never understood why until now. Log used to be the black box function I memorized and added where required, but now it's just the bridge between those two worlds. 
-
-Finally, I can 'see' this:
-
-> "The universe is written in the language of mathematics." — Galileo
 
 ---
 
