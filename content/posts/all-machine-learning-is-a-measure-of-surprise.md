@@ -7,7 +7,7 @@ tags:
   - ML
 ---
 
-![(37.8068842, -122.4254233) Cool chair at Golden Gate Park](/images/all-machine-learning-is-a-measure-of-surprise.jpg)
+![(37.7724512, -122.4667004) Cool chair at Golden Gate Park](/images/all-machine-learning-is-a-measure-of-surprise.jpg)
 
 I just started reading a new book, The art of science and engineering by Richard Hamming. As of writing this, I'm only into the first chapter where there was an example of how he looked at facts, claims and exposed their validity using these mental models. As he calls it 'back-of-the-envelope calculations', a method used by great scientists to get a good feeling for the truth or falsity of a claim. 
 
