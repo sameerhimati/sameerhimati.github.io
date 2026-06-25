@@ -6,7 +6,7 @@ tags:
   - Reflections
   - Building
 ---
-![Small boats moored in the San Francisco bay at golden hour, with Alcatraz on the horizon](/images/a-month-off-code.jpg)
+![(37.8068842, -122.4254233) boats out on the bay, Alcatraz behind them](/images/a-month-off-code.jpg)
 
 Its been exactly a month since I landed in San Francisco. 
 
