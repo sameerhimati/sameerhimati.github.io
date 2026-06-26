@@ -51,7 +51,7 @@ What undoes an exponential is the logarithm.
 
 ---
 
-We're taught to think in additive terms, a $30,000 raise just adds $30,000 to your name. But the world often moves multiplicatively, and those jumps feel like changing levels: $30,000 on top of $30,000 is a new life, the same raise on top of $150,000 barely registers. Compounding, growth, a founder watching users climb, it's all multiplicative, and it's genuinely hard to translate between the two worlds.
+We're taught to think in additive terms, a \$30,000 raise just adds \$30,000 to your name. But the world often moves multiplicatively, and those jumps feel like changing levels: \$30,000 on top of \$30,000 is a new life, the same raise on top of \$150,000 barely registers. Compounding, growth, a founder watching users climb, it's all multiplicative, and it's genuinely hard to translate between the two worlds.
 
 Growth is seen in exponentials. Division is the reverse of a single multiplication. But growth is repeated multiplication, and the reverse of that isn't division or roots, it's the log.
 
