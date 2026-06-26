@@ -57,8 +57,6 @@ Growth is seen in exponentials. Division is the reverse of a single multiplicati
 
 Digging in further what log is doing is turning × into +. So a ×2 becomes a +1 level, a ×8 becomes a +3 level jump (thinking in base 2 here). Those multiplicative jumps, the new 'levels' of progression don't sit on a ruler our brains naturally interpret. That is the translation, log bridges between the two worlds.
 
-At some point in university, I'd been told that log and e are the two most important pieces of math for interpreting the world. I nodded and never understood why until now. Log used to be the black box function I memorized and added where required, but now it's just the bridge between those two worlds. 
-
 ---
 
 Now practically speaking, where this × → + translation is common is in the world of probabilities. Probabilities are what all machine learning is based on and all learning is just a measure of how probable outcomes are. 
